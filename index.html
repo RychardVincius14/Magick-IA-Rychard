@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana do Zero ao Programador Contratado - Magic IA</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/responsivo.css" />
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./imagens/logo.png" alt="Logo MagicIA" />
+    </header>
+
+    <main class="container">
+        <h1 class="produtos">Produtos</h1>
+
+        <section class="filtros">
+            <div class="categorias-cartas">
+                <label for="categoria">Categoria</label>
+                <select id="categoria" class="categoria">
+                    <option value="">Selecione uma carta</option>
+                    <option value="comum">Comum</option>
+                    <option value="rara">Rara</option>
+                    <option value="épica">Épica</option>
+                    <option value="lendário">Lendário</option>
+                </select>
+            </div>
+
+            <div class="preco-cartas">
+                <label for="preco">Preço máximo (R$)</label>
+                <input type="number" id="preco" class="preco" placeholder="Ex: 100" />
+            </div>
+
+            <button class="btn-filtrar">Aplicar filtros</button>
+        </section>
+
+        <ul class="cartas">
+            <li class="carta" data-categoria="épica" data-preco="3000">
+                <img src="./imagens/carta-arkanon.png" alt="Carta do personagem Arkanon" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Arkanon</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 3.000,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="lendário" data-preco="4000">
+                <img src="./imagens/carta-drahven.png" alt="Carta do personagem Drahven" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Drahven</h2>
+                    <span class="categoria">Categoria: Lendário</span>
+                    <span class="preco">R$ 4.000,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="rara" data-preco="2000">
+                <img src="./imagens/carta-kaelthar.png" alt="Carta do personagem Kaelther" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Kaelther</h2>
+                    <span class="categoria">Categoria: Rara</span>
+                    <span class="preco">R$ 1.500,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="épica" data-preco="3000">
+                <img src="./imagens/carta-lymara.png" alt="Carta do personagem Lymara" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Lymara</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 2.500,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="épica" data-preco="3000">
+                <img src="./imagens/carta-maldrik.png" alt="Carta do personagem Maldrik" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Maldrik</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 2.500,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="rara" data-preco="2000">
+                <img src="./imagens/carta-nyxsombra.png" alt="Carta do personagem Nyxsombra" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Nyxsombra</h2>
+                    <span class="categoria">Categoria: Rara</span>
+                    <span class="preco">R$ 1.000,00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="rodape">
+        &copy; 2025 - Todos os direitos reservados
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
